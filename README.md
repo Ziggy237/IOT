@@ -208,6 +208,13 @@ void loop() {
 }
 ```
 
+### Note
+You can play around with the RGB values so you can have your preferred colors. A handy online tool to find your preffered colors in RGB values is
+https://www.rapidtables.com/web/color/RGB_Color.html
+
+## Step 3: Setting up the hardware
+
+
 
 
 
