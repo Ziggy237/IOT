@@ -4,15 +4,20 @@
 In this manual, I will guide you through the process of turning the LEDs on a LED strip on or off based on your own specified time, using the WorldTimeAPI as the reference for the current time.
 
 ## Requirements
-- NodeMCU
+- NodeMCU ESP 8266
 - LEDstrip
 - USB/USB-C to Micro USB
 - Arduino IDE
 - Wi-Fi
 
-## Step 1: Installing libraries
-The first thing we want to do, is download all libraries we will use over the course of this manual.
-Lets start by opening Arduino IDE an navigate to the libraries tab on the left hand side of the screen.
+## Step 1: Setting up Arduino and installing libraries
+The first thing we want to do, is setting up Arduino and downloading all libraries we will use over the course of this manual.
+Lets start by opening Arduino IDE, go to File > Preferences, and under "Additional Boards Manager URLs," add the following URL: 
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+Then go to Tools > Board > Boards Manager, search for ESP8266, and install the latest version.
+an navigate to the libraries tab on the left hand side of the screen.
+
 ![Schermopname (473)](https://github.com/user-attachments/assets/fef90d6b-f2c8-45ae-a6a8-7c69fe80003d)
 
 Now search and install the following libraries:
