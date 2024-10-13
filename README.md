@@ -1,3 +1,3 @@
-# IOT
-WiFi-Time-Controlled-LEDs
+# Manual for controlling LEDs with a node based on time 
+
 
