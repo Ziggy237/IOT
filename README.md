@@ -13,7 +13,15 @@ In this manual, I will guide you through the process of turning the LEDs on a LE
 ## Step 1: Installing libraries
 The first thing we want to do, is download all libraries we will use over the course of this manual.
 Lets start by opening Arduino IDE an navigate to the libraries tab on the left hand side of the screen.
-![Schermopname (472)](https://github.com/user-attachments/assets/8b46809e-8f21-4051-8c4b-401bc1d74540)
+![Schermopname (473)](https://github.com/user-attachments/assets/fef90d6b-f2c8-45ae-a6a8-7c69fe80003d)
+
+Now search and install the following libraries:
+- Adafruit NeoPixel
+- ArduinoJson
+
+## Step 2: Setting up the code
+
+
 
 
 
