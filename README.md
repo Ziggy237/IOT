@@ -215,6 +215,7 @@ You can play around with the RGB values so you can have your preferred colors. A
 https://www.rapidtables.com/web/color/RGB_Color.html
 <br>
 <br>
+
 ## Step 3: Setting up the hardware
 For this part you will be needing your, NodeMCU ESP 8266, LEDstrip and USB/USB-C to Micro USB.
 
@@ -239,6 +240,7 @@ If your D1 pin is not working right you can change it to another "D" pin, just m
 ![Schermafbeelding 2024-10-17 210406](https://github.com/user-attachments/assets/79c67ee9-0419-471f-9165-29cb43f38c57)
 <br>
 <br>
+
 ## Step 4: Uploading the code 
 Now that we’ve completed the setup, we can start uploading our code! First, make sure you’ve selected the correct port where your NodeMCU is connected.
 
@@ -274,6 +276,7 @@ You received a response of the World Time Api with your current time
 
 <br>
 <br>
+
 ### Your NodeMCU can't connect to your WiFi
 
 ![Schermopname (463)](https://github.com/user-attachments/assets/16ed3233-5f97-47e8-9960-589d1115a0de)
@@ -281,10 +284,25 @@ Your NodeMCU is unable to connect to your Wi-Fi. To fix this, ensure that you’
 
 <br>
 <br>
+
 ### Too many API requests 
 
 ![Schermafbeelding 2024-10-17 215551](https://github.com/user-attachments/assets/7136510d-aaab-4661-a100-8890ab97671e)
 You have sent too many requests to the API in a short period of time. For now, there’s nothing you can do except wait and try again later. To prevent this issue in the future, you can increase the delay time at the bottom of your code. The longer the delay, the less likely you are to encounter this problem.
+
+<br>
+<br>
+
+## Step 5: The result
+Your result now should look something like this:
+
+In this example, I set the time for the LEDs to turn off at 17:04 and to turn on at 17:04:59.
+https://youtu.be/JZNhAKoIBUg
+
+### Note 
+Make sure to check the time displayed in the serial monitor, as that is the correct time. In my example, the time from my laptop was incorrect, so the LEDs didn’t turn on at the expected time. Instead, they followed the time shown in the serial monitor.
+
+
 
 
 
