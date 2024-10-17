@@ -36,7 +36,7 @@ And install the following libraries:
 <br>
 
 ## Step 2: Setting up the code
-Now that everything has been setten up, we can begin with making our code! 
+Now that everything has been set up, we can begin with making our code! 
 
 1. First we will open a example file, **go to File > Examples > ESP8266WiFi > WiFiClient**
 
@@ -109,7 +109,7 @@ const String endTime = "09:59";    // Time LEDS will turn on
 ```
 
 ### Note
-Dont forrget to actually fill in your own wifi info & preffered LEDs on/off times
+Dont forget to actually fill in your own wifi info & preferred LEDs on/off times
 
 ![Schermafbeelding 2024-10-13 223339](https://github.com/user-attachments/assets/0441c6bf-fa7c-4b6f-8e0d-e49bb3c0afdf)
 ![Schermafbeelding 2024-10-13 225358](https://github.com/user-attachments/assets/d8d843ca-74ee-4889-8a50-59c747c5e1cf)
@@ -118,7 +118,7 @@ Dont forrget to actually fill in your own wifi info & preffered LEDs on/off time
 ### Note
 Instead of using the already written down URl "http://worldtimeapi.org/api/ip" who will find your timezone based on IP, you can also use a url specific to your prefered timezone. <br/> **Example** "http://worldtimeapi.org/api/timezone/Europe/Amsterdam"
 
-You can see all available timezones checking out this url on internet:
+You can see all available timezones by checking out this url on internet:
 http://worldtimeapi.org/api/timezone
 
 ![Schermopname (477)](https://github.com/user-attachments/assets/05cd6d22-477e-4f94-b6bd-c47271dd0010)
@@ -212,7 +212,7 @@ void loop() {
 ```
 
 ### Note
-You can play around with the RGB values so you can have your preferred colors. A handy online tool to find your preffered colors in RGB values is
+You can play around with the RGB values so you can have your preferred colors. A handy online tool to find your preferred colors in RGB values is
 https://www.rapidtables.com/web/color/RGB_Color.html
 <br>
 <br>
