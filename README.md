@@ -1,4 +1,5 @@
 # Manual for controlling LEDs with a node based on the WorldTimeAPI
+Made by Ziggy van de Weetering
 
 ## Introduction
 In this manual, I will guide you through the process of turning the LEDs on a LED strip on or off based on your own specified time, using the WorldTimeAPI as the reference for the current time.
@@ -301,6 +302,13 @@ https://youtu.be/JZNhAKoIBUg
 
 ### Note 
 Make sure to check the time displayed in the serial monitor, as that is the correct time. In my example, the time from my laptop was incorrect, so the LEDs didn’t turn on at the expected time. Instead, they followed the time shown in the serial monitor.
+
+
+## Sources
+
+World Time API: Simple JSON/plain-text API to obtain the current   time in, and related data about, a timezone. (n.d.). http://worldtimeapi.org/
+<br>
+https://chatgpt.com/share/6711729f-4ba4-8010-9df4-145267d778b0
 
 
 
