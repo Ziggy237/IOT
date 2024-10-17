@@ -31,6 +31,8 @@ Now navigate to the libraries tab on the left hand side of the screen.
 And install the following libraries:
 - Adafruit NeoPixel
 - ArduinoJson
+<br>
+<br>
 
 ## Step 2: Setting up the code
 Now that everything has been setten up, we can begin with making our code! 
@@ -211,8 +213,87 @@ void loop() {
 ### Note
 You can play around with the RGB values so you can have your preferred colors. A handy online tool to find your preffered colors in RGB values is
 https://www.rapidtables.com/web/color/RGB_Color.html
-
+<br>
+<br>
 ## Step 3: Setting up the hardware
+For this part you will be needing your, NodeMCU ESP 8266, LEDstrip and USB/USB-C to Micro USB.
+
+First thing you want to do is plug in your NodeMcu to your laptop/pc.
+<br>
+<br>
+<img src="https://github.com/user-attachments/assets/d0a1f12e-8c23-4dbc-96e0-8046964235dc" width="500"/>
+
+
+The next step is to connect the correct wires of your LED strip to the matching pins on the NodeMCU.
+The combinations are as follows:
+| LEDstrip | NodeMCU  |   
+|---------|---------|
+| Din (Yellow) | D1 pin |   
+| +5V (Red) | 3 Volt pin |   
+| G (Black) | G pin | 
+
+<img src="https://github.com/user-attachments/assets/44f5dda2-d6c6-4956-90a4-bdbfbf205161" width="350"/>  <img src="https://github.com/user-attachments/assets/3d9bb9c3-de27-4541-8432-0b970aa7bed6" width="350"/>    
+### Note
+If your D1 pin is not working right you can change it to another "D" pin, just make sure you also specify this in your code
+
+![Schermafbeelding 2024-10-17 210406](https://github.com/user-attachments/assets/79c67ee9-0419-471f-9165-29cb43f38c57)
+<br>
+<br>
+## Step 4: Uploading the code 
+Now that we’ve completed the setup, we can start uploading our code! First, make sure you’ve selected the correct port where your NodeMCU is connected.
+
+![Schermafbeelding 2024-10-17 212750](https://github.com/user-attachments/assets/fd19d404-ceaa-4aad-8490-d1e3f4a452f7)
+
+
+Now To upload your code to the NodeMcu you have to press the big green arrow on the top left of your screen.
+
+![Schermafbeelding 2024-10-11 151022](https://github.com/user-attachments/assets/913d8b14-91bc-4bc9-8301-f09ae172ebf3)
+
+If it is done correctly your output tab will be counting up to 100%
+![Schermopname (482)](https://github.com/user-attachments/assets/c3e141a9-d089-4523-8111-c4b72baa03d1)
+
+
+### Note 
+If you see an error like this in the output tab at the bottom of the screen, it means your NodeMCU is still not properly connected to your laptop or PC. I recommend checking if the USB cable is functioning correctly
+
+![Schermafbeelding 2024-10-17 211734](https://github.com/user-attachments/assets/120b2daf-53f0-4451-8317-297a3541a1f7)
+
+After uploading your code, you can open the serial monitor (magnifying glass at the top right of your screen) and make sure yout put the baud rate on 115200
+![Schermafbeelding 2024-10-17 214859](https://github.com/user-attachments/assets/9a2f02f9-a7a3-4a67-9a85-bc2467724d28)
+
+<br>
+<br>
+<br>
+
+ Now that that is done, there are multiple possible outcomes:
+
+### It is working
+
+![Schermopname (466)](https://github.com/user-attachments/assets/4ac50dfd-6953-47a4-9ffd-213f0fcfa92f)
+You received a response of the World Time Api with your current time 
+
+<br>
+<br>
+### Your NodeMCU can't connect to your WiFi
+
+![Schermopname (463)](https://github.com/user-attachments/assets/16ed3233-5f97-47e8-9960-589d1115a0de)
+Your NodeMCU is unable to connect to your Wi-Fi. To fix this, ensure that you’ve entered the correct Wi-Fi name (SSID) and password, and check that your Wi-Fi signal is strong enough.
+
+<br>
+<br>
+### Too many API requests 
+
+![Schermafbeelding 2024-10-17 215551](https://github.com/user-attachments/assets/7136510d-aaab-4661-a100-8890ab97671e)
+You have sent too many requests to the API in a short period of time. For now, there’s nothing you can do except wait and try again later. To prevent this issue in the future, you can increase the delay time at the bottom of your code. The longer the delay, the less likely you are to encounter this problem.
+
+
+
+
+
+
+
+
+
 
 
 
